@@ -7,9 +7,46 @@ body {
 }
 
 h1 {
-  color: #7448F4;
+  color: #8A2999;
 }
 
-h2 {
-  color: #53DCFF;
+i {
+  font-size: 30px;
+  color: #309fab;
+}
+
+p {
+  font-size: 20px;
+  color: #79d0db;
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #01353d;
+  background-image: none;
+  box-shadow: 0px 3px 2px grey;
+  margin-bottom: 10px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 40px;
+}
+
+.nav-link {
+  padding-bottom: 10;
+  color: white;
+  font-size: 25px;
 }
