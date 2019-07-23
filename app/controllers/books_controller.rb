@@ -9,7 +9,10 @@ class BooksController < ApplicationController
   end
 
   def create
-    Book.create(book_params)
+    @book = Book.create(book_params)
+    if @book.invalid?
+      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
+    end
     redirect_to root_path
   end
 

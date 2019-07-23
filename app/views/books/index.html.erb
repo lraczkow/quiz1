@@ -1,3 +1,12 @@
+<div class="container">
+  <% if flash[:error].present? %>
+    <div class="col-10 offset-1 alert alert-danger">
+      <%= flash[:error].html_safe %>
+    </div>
+  <% end %>
+  <%= yield %>
+</div>
+
 <h1>Here are some books to add to your must reads!</h1>
 <% Book.all.each do |book| %>
   <div class="booyah-box col-10 offset-1">
